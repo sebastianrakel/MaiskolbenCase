@@ -24,12 +24,12 @@ module distance_ring(height) {
 
 module holes(diameter=4) {
     hole_row(diameter);
-    translate([0, 73]) hole_row(diameter);
+    translate([0, 72]) hole_row(diameter);
 }
 
 module hole_row(diameter=4) {
     circle(d=diameter);
-    translate([67,0]) circle(d=diameter);
+    translate([66,0]) circle(d=diameter);
 }
 
 module base_plate(hole_diameter, open) {
