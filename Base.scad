@@ -7,9 +7,8 @@ module soldering_hole(hole_diameter, open=false) {
         translate([15,15]) hull() {
             circle(d=hole_diameter);
             if(open) {
-                translate([0, 20]) circle(d=hole_diameter);    
+                translate([0, 20]) circle(d=hole_diameter);
             }
-            
         }
     }
 }
@@ -36,7 +35,7 @@ module hole_row(diameter=4) {
 module base_plate(hole_diameter, open) {
     difference() {
         square([80, 85]);
-        translate([5,6]) holes();        
+        translate([5,6]) holes();
     }
     translate([80, 55]) soldering_hole(hole_diameter, open);
 }

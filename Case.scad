@@ -5,8 +5,8 @@ use <Stand.scad>
 
 rotate([45,0,0]) {
      BottomPlate();
-     translate([0,0,10]) UpperPlate();    
-     translate([80,70,5]) Distance();    
+     translate([0,0,10]) UpperPlate();
+     translate([80,70,5]) Distance();
 }
 
 translate([10,70,50]) {

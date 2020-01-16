@@ -8,15 +8,14 @@ module UpperPlate(){
             cylinder(h=12, d=4);
         }
     }
-    
+
     translate([110,70]) {
         difference() {
             cylinder(h=12, d=6);
             cylinder(h=12, d=4);
         }
     }
-    
-    
+
     translate([0,0,10]) 
     difference() {
         linear_extrude(thickness) {
