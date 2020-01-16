@@ -8,7 +8,7 @@ module inlay() {
 }
 
 module handle() {
-    difference() {    
+    difference() {
         cylinder(h=52,r=7);
         inlay();
     }
